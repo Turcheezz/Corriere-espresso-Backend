@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "gFOgyR/mNZdCPdXiaFWE0O5j0p7RHR++3xjoGWWLmNk=",
+  "Source": "CorriereEspressoBackend",
+  "BasePath": "_content/CorriereEspressoBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
