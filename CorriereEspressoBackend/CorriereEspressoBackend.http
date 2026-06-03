@@ -1,0 +1,49 @@
+@CorriereEspressoBackend_HostAddress = http://localhost:5000
+
+POST {{CorriereEspressoBackend_HostAddress}}/api/operatori/register
+Content-Type: application/json
+
+{
+  "nome": "Test",
+  "cognome": "User",
+  "email": "test@test.it",
+  "password": "password",
+  "confermaPassword": "password"
+}
+
+###
+
+POST {{CorriereEspressoBackend_HostAddress}}/api/operatori/login
+Content-Type: application/json
+
+{
+  "email": "mario.rossi@corriere.it",
+  "password": "password"
+}
+
+###
+
+GET {{CorriereEspressoBackend_HostAddress}}/api/clienti
+Authorization: Bearer {{token}}
+
+###
+
+GET {{CorriereEspressoBackend_HostAddress}}/api/consegne
+Authorization: Bearer {{token}}
+
+###
+
+POST {{CorriereEspressoBackend_HostAddress}}/api/tracking
+Content-Type: application/json
+
+{
+  "chiaveConsegna": "TRK-2026-000001",
+  "dataRitiro": "2026-05-20"
+}
+
+###
+
+GET {{CorriereEspressoBackend_HostAddress}}/api/statistiche/consegne?dal=2026-05-01&al=2026-05-31&stato=Consegnata
+Authorization: Bearer {{token}}
+
+###
